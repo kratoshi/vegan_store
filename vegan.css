@@ -1,0 +1,455 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#top-bar{
+    display: flex;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin: 0;
+    z-index: 200;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 950px;
+}
+
+#navigations{
+    margin: auto;
+    margin-right: 50px;
+    font-size: 15px;
+    gap: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+#nav-btns{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#nav-btns:hover{
+    text-decoration: underline;
+}
+
+#buynow-btn{
+    background-color: rgb(142, 191, 43);
+    color: white;
+    padding: 10px 25px;
+    border: 2px solid rgb(142, 191, 43);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#buynow-btn:hover{
+    background-color: transparent;
+    color: rgb(142, 191, 43);
+    border: 2px solid rgb(142, 191, 43);
+    font-weight: 700;
+}
+
+#drop-btn{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+#dropdown{
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: 2px solid rgb(142, 191, 43);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50px);
+    margin-top: 5px;
+    display: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+#dropdown-item{
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(142, 191, 43);
+    margin: 5px 10px;
+    padding-bottom: 5px;
+}
+
+#dropwrapper{
+    display: inline-block;
+}
+
+#dropwrapper:hover #dropdown{
+    display: block;
+}
+
+#hero-section{
+    background-image: url('https://media.istockphoto.com/id/1198965879/photo/organic-vegan-food.jpg?s=170667a&w=0&k=20&c=Dz_khfjKspOTzxrCE0yc6xQCZl0XVxKB79hbyOS_yG0=');
+    background-size: cover;
+    height: 90vh;
+}
+
+#steps-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'step1 step2 step3 step4';
+    text-align: center;
+    color: white;
+}
+
+#step{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#step1{
+    background-color: rgb(175, 149, 110);
+    grid-area: step1;
+    padding: 30px;
+}
+
+#step2{
+    background-color: rgb(142, 191, 43);
+    grid-area: step2;
+    padding: 30px;
+}
+
+#step3{
+    background-color: rgb(255, 179, 47);
+    grid-area: step3;
+    padding: 30px;
+}
+
+#step4{
+    background-color: lightcoral;
+    grid-area: step4;
+    padding: 30px;
+}
+
+#emoji{
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 1s ease-in;
+}
+
+#emoji:hover{
+    transform: scale(1.2);
+}
+
+#hero-text{
+    width: 55vw;
+    margin-left: 50px;
+}
+
+#wlcm{
+    font-family: 'Times New Roman', Times, serif;
+    color: lightcoral;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 150px;
+}
+
+#main-header{
+    font-weight: 700;
+    color: rgb(142, 191, 43);
+    text-align: left;
+    font-size: 80px;
+    margin-top: 0;
+}
+
+#para{
+    padding-right: 150px;
+    padding-top: 0;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+h1{
+    margin: 0px;
+}
+
+#store-section{
+    background-color: bisque;
+}
+
+#store-header{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#vegan-head{
+    font-size: 40px;
+}
+
+#vegan-para{
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+#features-wrapper{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
+}
+
+#feature-card{
+    text-align: center;
+    width: 15vw;
+    padding-bottom: 50px;
+}
+
+#feature{
+    font-size: 80px;
+    background-color: rgb(175, 149, 110);
+    color: white;
+    border-radius: 50%;
+    padding: 30%;
+    transform: scale(0.7);
+    margin-bottom: 0;
+}
+
+#feat-head{
+    font-size: 25px;
+}
+
+#feat-text{
+    text-align: center;
+}
+
+#comments-secton{
+    background-color: white;
+}
+
+#cards-wrapper{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+#card{
+    width: 20vw;
+    text-align: center;
+    background-color: #e8f8fa;
+    padding: 40px 20px;
+    border-radius: 40px 0px 40px 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+#card:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#head-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#FollowUs{
+    display: flex;
+}
+
+#strawberry{
+    width: 67vw;
+    height: 90vh;
+}
+
+#strawpic{
+    width: 67vw;
+    height: 90vh;
+}
+
+#contact-form{
+    width: 33vw;
+    height: 90vh;
+    background-image: url('https://www.liquor.com/thmb/6AFVKGLF_MLOLW_HnW6arnGO_Iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/strawberry-crush-720x720-primary-ad4c5ad8fce340b2b662890eea379175.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+#form-card{
+    width: 32vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 1000;
+    right: 0;
+}
+
+#follow-head{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: 180px;
+}
+
+#follow-para{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#email-input{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+#email-input:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sub-btn{
+    margin-left: 100px;
+    padding: 15px 30px;
+    border: 2px solid rgb(233, 43, 43);
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#sub-btn:hover{
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#count{
+    display: flex;
+    background-color: #e8f8fa;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#countwrapper{
+    width: 15vw;
+    text-align: center;
+}
+
+#counthead{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 150px;
+}
+
+#countpara{
+    font-size: 20px;
+    color: rgb(46, 246, 179);
+    margin-bottom: 150px;
+}
+
+#video-section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#contact-section{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+#locations{
+    width: 35vw;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+#location-heading{
+    font-size: 40px;
+    color: rgb(142, 191, 43);
+}
+
+#store-heading{
+    font-size: 28px;
+    line-height: 1.0;
+    color: rgb(142, 191, 43);
+}
+
+#storepara{
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+#ContactUs{
+    width: 35vw;
+    padding-top: 40px;
+}
+
+#form-field{
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid rgb(142, 191, 43);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#form-field:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#message-area{
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 90%;
+    height: 70px;
+    border: 1px solid rgb(142, 191, 43);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#message-area:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#submit-btn{
+    padding: 15px 50px;
+    border: 2px solid rgb(142, 191, 43);
+    border-radius: 15px;
+    background-color: rgb(142, 191, 43);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 100px;
+    font-weight: 700;
+}
+
+#submit-btn:hover{
+    background-color: transparent;
+    color: rgb(142, 191, 43);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color: rgb(142, 191, 43);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
